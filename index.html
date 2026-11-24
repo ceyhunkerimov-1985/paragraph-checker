@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paragraph Checker</title>
+<meta name="description" content="Şagird yazılarını fotodan yoxlayan tətbiq">
+<meta name="theme-color" content="#1596A0">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Paragraph">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paragraph Checker">
+<meta property="og:description" content="Şagird yazılarını fotodan yoxlayan tətbiq">
+<meta property="og:image" content="https://ceyhunkerimov-1985.github.io/paragraph-checker/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://ceyhunkerimov-1985.github.io/paragraph-checker/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ceyhunkerimov-1985.github.io/paragraph-checker/og-image.png">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#40CEC4,#0C808A);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#fff;text-align:center}
+.c{padding:24px 16px;max-width:420px}
+img{width:120px;height:120px;border-radius:26px;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+h1{font-size:24px;margin:16px 0 6px}
+a.b,button{display:inline-block;margin:8px 4px;padding:12px 20px;border-radius:12px;border:0;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+a.b{background:#fff;color:#0C808A}
+button{background:rgba(255,255,255,.2);color:#fff}
+p{opacity:.9;font-size:14px}
+</style>
+</head>
+<body>
+<div class="c">
+<img src="icon-512.png" alt="">
+<h1>Paragraph Checker</h1>
+<p id="msg">Tətbiq açılır…</p>
+<a class="b" href="https://claude.ai/artifact/Amtp78VM8DrbeuPAakj2xK">Tətbiqi aç</a>
+<button id="stay" type="button">Gözlə, ana ekrana əlavə edəcəm</button>
+</div>
+<script>
+var APP='https://claude.ai/artifact/Amtp78VM8DrbeuPAakj2xK';
+var t=setTimeout(function(){location.href=APP},2500);
+document.getElementById('stay').onclick=function(){clearTimeout(t);this.hidden=true;
+document.getElementById('msg').textContent='Paylaş düyməsinə basıb «Ana ekrana əlavə et» seçin (Android-də ⋮ menyusu).'};
+</script>
+</body>
+</html>
